@@ -5,7 +5,7 @@ type Props = {}
 
 export default function Header({ }: Props) {
     return (
-        <header className="flex flex-row justify-between self-start border-b-[0.5px] border-[gray] bg-transparent mx-20 py-6">
+        <header className="flex flex-row justify-between self-start items-center border-b-[0.5px] border-[gray] bg-transparent mx-20 py-6">
             <h1 className="text-lg font-semibold"><span className="text-[#15f7d6]">{'<V/>'}</span> ValentineCodes</h1>
 
             <nav>
