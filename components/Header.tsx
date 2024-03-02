@@ -5,11 +5,11 @@ type Props = {}
 
 export default function Header({ }: Props) {
     return (
-        <header className="flex flex-row justify-between self-start border-b-[0.5px] border-[gray] w-full bg-transparent mx-20 py-6">
-            <h1 className="text-lg font-semibold"><span className="text-[#15f7d6]">{'<C/>'}</span> ValentineCodes</h1>
+        <header className="flex flex-row justify-between self-start border-b-[0.5px] border-[gray] bg-transparent mx-20 py-6">
+            <h1 className="text-lg font-semibold"><span className="text-[#15f7d6]">{'<V/>'}</span> ValentineCodes</h1>
 
             <nav>
-                <ul className="flex flex-row justify-between space-x-6 text-sm font-light">
+                <ul className="flex flex-row items-center justify-between space-x-6 text-sm font-light">
                     <li><a className="hover:text-[#15f7d6] duration-300">Home</a></li>
                     <li><a className="hover:text-[#15f7d6] duration-300">About</a></li>
                     <li><a className="hover:text-[#15f7d6] duration-300">Skills</a></li>
@@ -21,7 +21,6 @@ export default function Header({ }: Props) {
                             fgColor="gray"
                             bgColor="transparent"
                             target="_blank"
-                            className='mt-[-15px]'
                         />
                     </li>
                     <li>
@@ -30,7 +29,6 @@ export default function Header({ }: Props) {
                             fgColor="gray"
                             bgColor="transparent"
                             target="_blank"
-                            className='mt-[-15px]'
                         />
                     </li>
                     <li>
@@ -39,7 +37,6 @@ export default function Header({ }: Props) {
                             fgColor="gray"
                             bgColor="transparent"
                             target="_blank"
-                            className='mt-[-15px]'
                         />
                     </li>
                 </ul>
