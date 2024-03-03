@@ -1,3 +1,5 @@
+"use client"
+
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Header from "@/components/Header";
@@ -5,13 +7,15 @@ import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
 import Works from "@/components/Works";
 
+import { Popover } from '@headlessui/react'
+
 export default function Home() {
   return (
-    <main>
-      <section className="h-screen w-full bg-[#292f37]">
+    <main id="home">
+      <Popover className="relative h-screen w-full bg-[#292f37]">
         <Header />
         <Hero />
-      </section>
+      </Popover>
 
       <section className="h-screen bg-[#292f37] flex items-center">
         <About />
