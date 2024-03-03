@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
@@ -22,6 +23,10 @@ export default function Home() {
 
       <section className="bg-[url('/images/head_shattering.jpeg')] h-screen bg-cover">
         <Works />
+      </section>
+
+      <section className="bg-[#1a1e23] h-screen bg-cover">
+        <Contact />
       </section>
     </main>
   );
