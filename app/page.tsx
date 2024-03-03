@@ -12,12 +12,12 @@ import { Popover } from '@headlessui/react'
 export default function Home() {
   return (
     <main id="home">
-      <Popover className="relative h-screen w-full bg-[#292f37]">
+      <Popover className="relative min-h-screen w-full bg-[#292f37]">
         <Header />
         <Hero />
       </Popover>
 
-      <section className="h-screen bg-[#292f37] flex items-center">
+      {/* <section className="h-screen bg-[#292f37] flex items-center">
         <About />
       </section>
 
@@ -31,7 +31,7 @@ export default function Home() {
 
       <section className="bg-[#1a1e23] h-screen bg-cover">
         <Contact />
-      </section>
+      </section> */}
     </main>
   );
 }
