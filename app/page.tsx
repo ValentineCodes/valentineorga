@@ -21,11 +21,11 @@ export default function Home() {
         <About />
       </section>
 
-      {/* <section className="bg-[url('/images/coding_bg0.jpeg')] h-screen bg-no-repeat bg-cover">
+      <section className="bg-[url('/images/coding_bg.jpeg')] min-h-screen bg-no-repeat bg-cover">
         <Skills />
       </section>
 
-      <section className="bg-[url('/images/head_shattering.jpeg')] h-screen bg-cover">
+      {/* <section className="bg-[url('/images/head_shattering.jpeg')] h-screen bg-cover">
         <Works />
       </section>
 
