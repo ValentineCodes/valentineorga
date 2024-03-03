@@ -1,16 +1,17 @@
 import React from 'react'
-import { CiDesktopMouse2, CiMonitor } from "react-icons/ci";
+import { CiMonitor } from "react-icons/ci";
 import { BsPhone } from "react-icons/bs";
 import { LuSquareStack } from "react-icons/lu";
 
 import Skill from './Skill';
+import MousePointer from './MousePointer';
 
 type Props = {}
 
 export default function Skills({ }: Props) {
     return (
         <div className='min-h-screen bg-[#292f37] bg-opacity-90 flex flex-col items-center justify-center px-6 lg:px-32 py-14'>
-            <CiDesktopMouse2 className='text-4xl text-[#15f7d6]' />
+            <MousePointer />
 
             <h1 className='text-4xl text-[#15f7d6] font-light inline mt-16'>Skills</h1>
             <p className='text-md font-light text-gray-400 text-center'>I strive to never stop learning and improving</p>

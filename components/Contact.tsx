@@ -1,13 +1,13 @@
 import React from 'react'
-import { CiDesktopMouse2 } from 'react-icons/ci'
 import { BsSend } from "react-icons/bs";
+import MousePointer from './MousePointer';
 
 type Props = {}
 
 export default function Contact({ }: Props) {
     return (
         <div className='min-h-screen bg-[#292f37] bg-opacity-[0.99] flex flex-col items-center justify-center px-6 lg:px-32 py-14'>
-            <CiDesktopMouse2 className='text-4xl text-[#15f7d6]' />
+            <MousePointer />
 
             <h1 className='text-4xl text-[#15f7d6] font-light inline mt-16'>Contact</h1>
             <p className='text-md font-light text-gray-400 text-center'>I'm currently available for full-time positions</p>
