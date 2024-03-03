@@ -4,17 +4,17 @@ type Props = {}
 
 export default function About({ }: Props) {
     return (
-        <div className='flex flex-row justify-around w-full py-16'>
+        <div className='flex flex-col lg:flex-row items-center space-y-14 lg:justify-between lg:space-x-14 px-6 lg:px-32 py-14 max-w-[1200px] mx-auto'>
             <div>
-                <h1 className='border-2 border-[#15f7d6] rounded-ss-[30px] rounded-br-[30px] px-6 py-4 text-5xl inline'>About Me</h1>
+                <h1 className='border-2 border-[#15f7d6] rounded-ss-[30px] rounded-br-[30px] px-6 py-4 text-2xl lg:text-4xl inline'>About&nbsp;Me</h1>
 
-                <div className='space-y-2 border p-4 rounded-[30px] max-w-[600px] mt-20'>
+                <div className='space-y-2 border p-4 rounded-[30px] max-w-[600px] mt-10 lg:mt-20'>
                     <p className='text-[#15f7d6] font-thin text-sm'>{'<p>'}</p>
-                    <p className='ml-4 text-5xl text-[#15f7d6]'>Hello!</p>
-                    <p className='text-lg font-light text-gray-200 ml-4'>My name is Valentine Orga and I specialize in blockchain development utilizing <span className='text-[#15f7d6]'>NextJS</span>, <span className='text-[#15f7d6]'>React Native</span>, <span className='text-[#15f7d6]'>Solidity</span>, e.t.c.</p>
-                    <p className='text-lg font-light text-gray-200 ml-4'>I'm highly disciplined and dedicated to writing clear, concise, robust code that works. I believe in the blockchain's potential so I strive to never stop learning and improving.</p>
-                    <p className='text-lg font-light text-gray-200 ml-4'>I love reading books and educative articles. Also, Football... <span className='text-[#15f7d6]'>Up&nbsp;Barcelona!</span></p>
-                    <p className='text-lg font-light text-gray-200 ml-4'>I'm always open to new challenges. Enough to push me beyond my limits and broaden my vision of the ecosystem.</p>
+                    <p className='ml-4 text-2xl lg:text-4xl text-[#15f7d6]'>Hello!</p>
+                    <p className='text-sm lg:text-md font-light text-gray-200 ml-4'>My name is Valentine Orga and I specialize in blockchain development utilizing <span className='text-[#15f7d6]'>NextJS</span>, <span className='text-[#15f7d6]'>React Native</span>, <span className='text-[#15f7d6]'>Solidity</span>, e.t.c.</p>
+                    <p className='text-sm lg:text-md font-light text-gray-200 ml-4'>I'm highly disciplined and dedicated to writing clear, concise, robust code that works. I believe in the blockchain's potential so I strive to never stop learning and improving.</p>
+                    <p className='text-sm lg:text-md font-light text-gray-200 ml-4'>I love reading books and educative articles. Also, Football... <span className='text-[#15f7d6]'>Up&nbsp;Barcelona!</span></p>
+                    <p className='text-sm lg:text-md font-light text-gray-200 ml-4'>I'm always open to new challenges. Enough to push me beyond my limits and broaden my vision of the ecosystem.</p>
                     <p className='text-[#15f7d6] font-thin text-sm'>{'</p>'}</p>
                 </div>
             </div>

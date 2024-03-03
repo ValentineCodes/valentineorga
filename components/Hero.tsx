@@ -55,7 +55,7 @@ export default function Hero({ }: Props) {
                 <p className='text-[#15f7d6] font-thin text-sm'>{'</h1>'}</p>
 
                 <p className='text-[#15f7d6] font-thin text-sm mt-6'>{'<p>'}</p>
-                <p className='ml-4 text-xs md:text-sm text-gray-400 max-w-lg'>I help businesses grow by crafting out great user experiences. If you're looking for developer that loves to get stuff done.</p>
+                <p className='ml-4 text-sm md:text-md text-gray-400 max-w-lg'>I help businesses grow by crafting out great user experiences. If you're looking for developer that loves to get stuff done.</p>
                 <p className='text-[#15f7d6] font-thin text-sm'>{'</p>'}</p>
 
                 <Link href="#contact" className='flex flex-row items-center text-[#15f7d6] text-3xl mt-4 ml-4'>Let's Talk <CiMail className='ml-2' /></Link>

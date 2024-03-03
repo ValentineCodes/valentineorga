@@ -17,11 +17,11 @@ export default function Home() {
         <Hero />
       </Popover>
 
-      {/* <section className="h-screen bg-[#292f37] flex items-center">
+      <section className="min-h-screen bg-[#292f37] flex items-center">
         <About />
       </section>
 
-      <section className="bg-[url('/images/coding_bg0.jpeg')] h-screen bg-no-repeat bg-cover">
+      {/* <section className="bg-[url('/images/coding_bg0.jpeg')] h-screen bg-no-repeat bg-cover">
         <Skills />
       </section>
 
