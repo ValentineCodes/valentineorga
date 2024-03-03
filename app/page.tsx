@@ -27,11 +27,11 @@ export default function Home() {
 
       {/* <section className="bg-[url('/images/head_shattering.jpeg')] h-screen bg-cover">
         <Works />
-      </section>
-
-      <section className="bg-[#1a1e23] h-screen bg-cover">
-        <Contact />
       </section> */}
+
+      <section className="bg-[#1a1e23] min-h-screen bg-cover">
+        <Contact />
+      </section>
     </main>
   );
 }
