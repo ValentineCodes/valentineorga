@@ -15,11 +15,10 @@ export default function Header({ }: Props) {
 
             <nav className='flex items-center space-x-6'>
                 <ul className="hidden lg:flex items-center justify-between space-x-6 text-sm font-light">
-                    <li><a className="hover:text-[#15f7d6] duration-300">Home</a></li>
-                    <li><a className="hover:text-[#15f7d6] duration-300">About</a></li>
-                    <li><a className="hover:text-[#15f7d6] duration-300">Skills</a></li>
-                    <li><a className="hover:text-[#15f7d6] duration-300">Works</a></li>
-                    <li><a className="hover:text-[#15f7d6] duration-300">Contact</a></li>
+                    <li><a href="#about" className="hover:text-[#15f7d6] duration-300">About</a></li>
+                    <li><a href="#skills" className="hover:text-[#15f7d6] duration-300">Skills</a></li>
+                    <li><a href="#works" className="hover:text-[#15f7d6] duration-300">Works</a></li>
+                    <li><a href="#contact" className="hover:text-[#15f7d6] duration-300">Contact</a></li>
                 </ul>
 
 
@@ -47,11 +46,10 @@ export default function Header({ }: Props) {
             >
                 <Popover.Panel as='nav' focus className="absolute inset-x-0 top-24 z-[1000] origin-top-right transform p-2 transition lg:hidden bg-[#292f37]">
                     <ul className="text-sm font-light">
-                        <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#home'>Home</a></li>
-                        <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#about'>About</a></li>
-                        <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#skills'>Skills</a></li>
-                        <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#works'>Works</a></li>
-                        <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#contact'>Contact</a></li>
+                        <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#about' className='block'>About</a></li>
+                        <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#skills' className='block'>Skills</a></li>
+                        <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#works' className='block'>Works</a></li>
+                        <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#contact' className='block'>Contact</a></li>
                     </ul>
 
 
