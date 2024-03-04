@@ -17,7 +17,7 @@ export default function Home() {
         <Hero />
       </Popover>
 
-      <section id="about" className="min-h-screen bg-[#292f37] flex items-center">
+      <section id="about" className="bg-[url('/images/about_bg.jpeg')] min-h-screen bg-no-repeat bg-cover">
         <About />
       </section>
 

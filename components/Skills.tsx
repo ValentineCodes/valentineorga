@@ -16,7 +16,7 @@ export default function Skills({ }: Props) {
             <h1 className='text-4xl text-[#15f7d6] font-light inline mt-16'>Skills</h1>
             <p className='text-md font-light text-gray-400 text-center'>I strive to never stop learning and improving</p>
 
-            <div className='flex flex-row flex-wrap space-x-8 space-y-8 text-black my-14 justify-center'>
+            <div className="flex flex-col md:flex-row justify-between items-center max-md:space-y-8 md:space-x-10 my-14 text-black text-center">
                 <div className='flex flex-col items-center space-y-3 rounded-lg border-l-8 border-[#0c73b8] bg-[#15f7d6] px-4 py-2'>
                     <CiMonitor className='text-3xl md:text-4xl' />
                     <p className='text-lg md:text-xl font-light'>Web Development</p>

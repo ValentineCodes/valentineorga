@@ -44,7 +44,7 @@ export default function Header({ }: Props) {
                 leaveFrom="scale-100 opacity-100"
                 leaveTo="scale-95 opacity-0"
             >
-                <Popover.Panel as='nav' focus className="absolute inset-x-0 top-24 z-[1000] origin-top-right transform p-2 transition lg:hidden bg-[#292f37]">
+                <Popover.Panel as='nav' focus className="absolute inset-x-0 top-24 z-[1000] origin-top-right transform px-2 py-8 transition lg:hidden bg-[#292f37]">
                     <ul className="text-sm font-light">
                         <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#about' className='block'>About</a></li>
                         <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#skills' className='block'>Skills</a></li>

@@ -4,7 +4,7 @@ type Props = {}
 
 export default function About({ }: Props) {
     return (
-        <div className='flex flex-col lg:flex-row items-center space-y-14 lg:justify-between lg:space-x-14 px-6 lg:px-32 py-14 max-w-[1200px] mx-auto'>
+        <div className='bg-[#292f37] bg-opacity-90 min-h-screen flex flex-col lg:flex-row items-center space-y-14 lg:justify-between lg:space-x-14 px-6 lg:px-32 py-14'>
             <div>
                 <h1 className='border-2 border-[#15f7d6] rounded-ss-[30px] rounded-br-[30px] px-6 py-4 text-2xl lg:text-4xl inline'>About&nbsp;Me</h1>
 
