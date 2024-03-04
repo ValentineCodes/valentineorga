@@ -41,10 +41,12 @@ export default function Hero({ }: Props) {
                     </div>
                 </div>
 
-                <button className='flex flex-row items-center mx-auto space-x-2 bg-white hover:bg-[#15f7d6] px-4 py-2 text-black rounded-3xl font-light duration-200 mt-4'>
-                    <span>Download CV</span>
-                    <BsDownload />
-                </button>
+                <a href="/images/profile_image.webp" download="Valentine Orga's Resume">
+                    <button className='flex flex-row items-center mx-auto space-x-2 bg-white hover:bg-[#15f7d6] px-4 py-2 text-black rounded-3xl font-light duration-200 mt-4'>
+                        <span>Download CV</span>
+                        <BsDownload />
+                    </button>
+                </a>
             </div>
 
             <div>
