@@ -25,7 +25,7 @@ export default function Home() {
         <Skills />
       </section>
 
-      <section id="works" className="bg-[url('/images/head_shattering.jpeg')] h-screen bg-cover">
+      <section id="works" className="bg-[url('/images/head_shattering.jpeg')] min-h-screen bg-cover">
         <Works />
       </section>
 
