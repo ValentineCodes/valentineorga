@@ -6,12 +6,15 @@ import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
 import { Popover, Transition } from '@headlessui/react'
 import Link from 'next/link';
 
+import { motion } from "framer-motion";
+
 type Props = {}
 
 export default function Header({ }: Props) {
     return (
         <header className="container mx-auto flex justify-between items-center border-b-[0.5px] border-[gray] bg-transparent p-6 space-x-4 h-24">
             <h1 className="text-lg font-semibold"><span className="text-[#15f7d6]">{'<VC/>'}</span> ValentineCodes</h1>
+
 
             <nav className='flex items-center space-x-6'>
                 <ul className="hidden lg:flex items-center justify-between space-x-6 text-sm font-light">
