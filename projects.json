@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Pocket",
+        "description": "A crypto wallet to generate accounts, manage tokens, transfer funds, sign transactions and more on any EVM-compatible chain",
+        "demoLink": "https://github.com/ValentineCodes/pocket",
+        "codeLink": "https://github.com/ValentineCodes/pocket",
+        "codeImg": "/images/pocket_code.png",
+        "demoImg": "/images/pocket_img.jpeg"
+    },
+    {
+        "title": "Token Wrapper",
+        "description": "A Decentralized Application which enables users to wrap native and ERC20 tokens on supported networks",
+        "demoLink": "https://token-wrapper.vercel.app/",
+        "codeLink": "https://github.com/ValentineCodes/token-wrapper",
+        "codeImg": "/images/token-wrapper_code.png",
+        "demoImg": "/images/token-wrapper_img.png"
+    },
+    {
+        "title": "The Bridge",
+        "description": "A bridge between layer-1 and layer-2 tokens",
+        "demoLink": "https://thebridge-alpha.vercel.app/",
+        "codeLink": "https://github.com/ValentineCodes/thebridge",
+        "codeImg": "/images/thebridge_code.png",
+        "demoImg": "/images/thebridge_img.png"
+    },
+    {
+        "title": "Snowman NFT",
+        "description": "A composable NFT based on the ERC4883 standard which enables you to mint a snowman with dynamic attributes(sky color, wind direction which affects the snowfall direction, eye focus, e.t.c) and compose with other accessories(Hat🎩, Scarf🧣, e.t.c)        ",
+        "demoLink": "https://snowman-eight.vercel.app/",
+        "codeLink": "https://github.com/ValentineCodes/snowman",
+        "codeImg": "/images/snowman_code.png",
+        "demoImg": "/images/snowman_img.png"
+    },
+    {
+        "title": "Yeet CLI",
+        "description": "A CLI for querying blockchain data, interacting with smart contracts, transfer funds, generating accounts and more",
+        "demoLink": "https://www.npmjs.com/package/yeet-cli",
+        "codeLink": "https://github.com/ValentineCodes/yeet",
+        "codeImg": "/images/yeet_code.png",
+        "demoImg": "/images/yeet_img.png"
+    },
+    {
+        "title": "Unit Marketplace",
+        "description": "A Decentralized NFT Marketplace. It allows NFT owners to list their NFTs for a fixed price or put them up for auction. A seller can also toggle between fixed price listing and auction at any time",
+        "demoLink": "https://unit-mu.vercel.app/",
+        "codeLink": "https://github.com/ValentineCodes/unit-marketplace",
+        "codeImg": "/images/unit_code.png",
+        "demoImg": "/images/unit_img.png"
+    }
+]
