@@ -85,7 +85,7 @@ function NextArrow(props: any) {
     );
 }
 
-export default function WorksSlide({ }: Props) {
+export default function ProjectsSlide({ }: Props) {
     const settings = {
         infinite: true,
         speed: 500,

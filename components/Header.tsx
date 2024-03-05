@@ -20,7 +20,7 @@ export default function Header({ }: Props) {
                 <ul className="hidden lg:flex items-center justify-between space-x-6 text-sm font-light">
                     <li><a href="#about" className="hover:text-[#15f7d6] duration-300">About</a></li>
                     <li><a href="#skills" className="hover:text-[#15f7d6] duration-300">Skills</a></li>
-                    <li><a href="#works" className="hover:text-[#15f7d6] duration-300">Works</a></li>
+                    <li><a href="#Projects" className="hover:text-[#15f7d6] duration-300">Projects</a></li>
                     <li><a href="#contact" className="hover:text-[#15f7d6] duration-300">Contact</a></li>
                 </ul>
 
@@ -51,7 +51,7 @@ export default function Header({ }: Props) {
                     <ul className="text-sm font-light">
                         <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#about' className='block'>About</a></li>
                         <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#skills' className='block'>Skills</a></li>
-                        <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#works' className='block'>Works</a></li>
+                        <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#Projects' className='block'>Projects</a></li>
                         <li className='p-4 hover:bg-black hover:bg-opacity-20 duration-200'><a href='#contact' className='block'>Contact</a></li>
                     </ul>
 

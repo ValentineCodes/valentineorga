@@ -5,7 +5,7 @@ import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
-import Works from "@/components/Works";
+import Projects from "@/components/Projects";
 
 import { Popover } from '@headlessui/react'
 
@@ -25,8 +25,8 @@ export default function Home() {
         <Skills />
       </section>
 
-      <section id="works" className="bg-[url('/images/head_shattering.jpeg')] min-h-screen bg-cover">
-        <Works />
+      <section id="Projects" className="bg-[url('/images/head_shattering.jpeg')] min-h-screen bg-cover">
+        <Projects />
       </section>
 
       <section id="contact" className="bg-[#1a1e23] min-h-screen bg-cover">
