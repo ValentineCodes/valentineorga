@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BsSend } from "react-icons/bs";
 import MousePointer from './MousePointer';
 import { useForm, SubmitHandler } from "react-hook-form";
 import { motion } from 'framer-motion';
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { LuLoader } from "react-icons/lu";
 
 type Props = {}
 type Input = {
@@ -11,11 +15,41 @@ type Input = {
     message: string;
 };
 
+const SERVICE_ID = "service_3lucjjt"
+const TEMPLATE_ID = "template_27ys0r5"
+const PUBLIC_KEY = "u7V42A2oJGcyMzB_f"
+
 export default function Contact({ }: Props) {
     const { register, handleSubmit } = useForm<Input>();
+    const [isSending, setIsSending] = useState(false)
 
-    const onSubmit: SubmitHandler<Input> = (data) => {
-        window.location.href = `mailto:valentineorga@gmail.com?subject=Job Request&body=Hi, My name is ${data.name}. ${data.message} [${data.email}]`;
+    const onSubmit: SubmitHandler<Input> = async (data) => {
+        const msgParams = {
+            from_name: data.name,
+            from_email: data.email,
+            message: data.message,
+            to_name: "Valentine Orga"
+        }
+
+        try {
+            setIsSending(true)
+
+            await emailjs
+                .send(SERVICE_ID, TEMPLATE_ID, msgParams, {
+                    publicKey: PUBLIC_KEY,
+                })
+
+            toast.success("Email sent successfully. We'll get back to you shortly", {
+                position: "top-center",
+            });
+        } catch (error) {
+            toast.error("Failed to send email. Please ensure you have a stable network connection", {
+                position: "top-center",
+            });
+            console.error(error)
+        } finally {
+            setIsSending(false)
+        }
     };
 
     return (
@@ -122,13 +156,31 @@ export default function Contact({ }: Props) {
                         }}
                         transition={{ duration: 0.7, ease: "easeInOut", delay: 0.3 }}
                         viewport={{ once: true }}>
-                        <button type='submit' className='flex flex-row items-center mx-auto space-x-2 text-lg md:text-xl bg-[#15f7d6] hover:bg-transparent px-6 py-2 text-black hover:text-white border border-[#15f7d6] rounded-3xl font-light duration-200 mt-4'>
-                            <span>Send Message</span>
-                            <BsSend />
+                        <button type='submit' disabled={isSending} className='flex flex-row items-center mx-auto space-x-2 text-lg md:text-xl bg-[#15f7d6] hover:bg-transparent px-6 py-2 text-black hover:text-white border border-[#15f7d6] rounded-3xl font-light duration-200 mt-4'>
+                            {isSending ?
+                                <motion.div
+                                    initial={{
+                                        rotate: 0
+                                    }}
+                                    animate={{
+                                        rotate: 360,
+                                    }}
+                                    transition={{ duration: 1, ease: "easeInOut", repeatType: "loop", repeat: 1000 }}
+                                >
+                                    <LuLoader className='text-2xl md:text-3xl w-[160px]' />
+                                </motion.div>
+                                :
+                                <>
+                                    <span>Send Message</span>
+                                    <BsSend />
+                                </>
+                            }
                         </button>
                     </motion.div>
                 </form>
             </div>
+
+            <ToastContainer />
         </div>
     )
 }
