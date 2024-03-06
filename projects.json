@@ -1,11 +1,11 @@
 [
     {
-        "title": "Pocket",
+        "title": "Paux Wallet",
         "description": "A crypto wallet to generate accounts, manage tokens, transfer funds, sign transactions and more on any EVM-compatible chain",
-        "demoLink": "https://github.com/ValentineCodes/pocket",
-        "codeLink": "https://github.com/ValentineCodes/pocket",
-        "codeImg": "/images/pocket_code.png",
-        "demoImg": "/images/pocket_img.jpeg"
+        "demoLink": "https://play.google.com/store/apps/details?id=com.paux.wallet",
+        "codeLink": "https://github.com/ValentineCodes/paux",
+        "codeImg": "/images/paux_code.png",
+        "demoImg": "/images/paux_img.jpg"
     },
     {
         "title": "Token Wrapper",
