@@ -57,7 +57,7 @@ export default function Contact({ }: Props) {
             <MousePointer />
 
             <h1 className='text-4xl text-[#15f7d6] font-light inline mt-16 underline underline-offset-[12px] mb-4'>Contact</h1>
-            <p className='text-md font-light text-gray-400 text-center'>I'm currently available for full-time positions</p>
+            <p className='text-md font-light text-gray-400 text-center'>I&apos;m currently available for full-time positions</p>
 
             <div className='mt-14 space-y-14 flex flex-col items-center w-full max-w-[720px]'>
                 <motion.div

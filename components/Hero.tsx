@@ -81,7 +81,7 @@ export default function Hero({ }: Props) {
                 >
                     <p className='text-[#15f7d6] font-thin text-sm'>{'<h1>'}</p>
                     <p className='ml-4 text-2xl md:text-4xl xl:text-5xl'>Hey</p>
-                    <p className='ml-4 text-2xl md:text-4xl xl:text-5xl'>I'm&nbsp;<span className='text-[#15f7d6]'>Valentine</span>,</p>
+                    <p className='ml-4 text-2xl md:text-4xl xl:text-5xl'>I&apos;m&nbsp;<span className='text-[#15f7d6]'>Valentine</span>,</p>
                     <p className='ml-4 text-2xl md:text-4xl xl:text-5xl'>Blockchain Developer</p>
                     <p className='text-[#15f7d6] font-thin text-sm'>{'</h1>'}</p>
                 </motion.div>
@@ -99,7 +99,7 @@ export default function Hero({ }: Props) {
                     transition={{ duration: 0.7, ease: "easeInOut", delay: 0.35 }}
                 >
                     <p className='text-[#15f7d6] font-thin text-sm mt-6'>{'<p>'}</p>
-                    <p className='ml-4 text-sm md:text-md text-gray-400 max-w-lg'>I help businesses grow by crafting out great user experiences. If you're looking for a developer that loves to get stuff done</p>
+                    <p className='ml-4 text-sm md:text-md text-gray-400 max-w-lg'>I help businesses grow by crafting out great user experiences. If you&apos;re looking for a developer that loves to get stuff done</p>
                     <p className='text-[#15f7d6] font-thin text-sm'>{'</p>'}</p>
                 </motion.div>
                 <motion.div
@@ -115,7 +115,7 @@ export default function Hero({ }: Props) {
                     }}
                     transition={{ duration: 0.7, ease: "easeInOut", delay: 0.5 }}
                 >
-                    <Link href="#contact" className='flex flex-row items-center text-[#15f7d6] text-3xl mt-4 ml-4'>Let's Talk <span className='bg-[#43454e] p-2 ml-2 rounded-full'><LuMail className='text-[1rem]' /></span></Link>
+                    <Link href="#contact" className='flex flex-row items-center text-[#15f7d6] text-3xl mt-4 ml-4'>Let&apos;s Talk <span className='bg-[#43454e] p-2 ml-2 rounded-full'><LuMail className='text-[1rem]' /></span></Link>
                 </motion.div>
             </div>
         </div >
