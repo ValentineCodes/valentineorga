@@ -1,5 +1,6 @@
 import React from 'react'
 import { CiDesktopMouse2 } from 'react-icons/ci'
+import { FaDiamond } from "react-icons/fa6";
 import { motion } from "framer-motion"
 
 type Props = {}
@@ -18,7 +19,7 @@ export default function MousePointer({ }: Props) {
             className='flex flex-col items-center'
         >
             <CiDesktopMouse2 className='text-4xl text-[#15f7d6]' />
-            <div className='flex flex-col items-center ml-[2px]'>
+            <div className='flex flex-col items-center'>
                 <div className='rotate-90'>-</div>
                 <div className='rotate-90 mt-[-16px]'>-</div>
                 <div className='rotate-90 mt-[-16px]'>-</div>
@@ -26,7 +27,7 @@ export default function MousePointer({ }: Props) {
                 <div className='rotate-90 mt-[-16px]'>-</div>
                 <div className='rotate-90 mt-[-16px]'>-</div>
                 <div className='rotate-90 mt-[-16px]'>-</div>
-                <div className='ml-[-3px] mt-[-10px] text-xs text-white'>♦</div>
+                <FaDiamond className='mt-[-7px] ml-[0.5px] text-[0.5rem] text-white' />
             </div>
         </motion.div>
     )
