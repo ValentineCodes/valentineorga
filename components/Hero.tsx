@@ -30,7 +30,7 @@ export default function Hero({ }: Props) {
             >
                 <img src="/images/profile_image.webp" alt="My handsome face" className='relative rounded-full h-32 w-32 mx-auto object-cover border-4 border-[#15f7d6]' />
                 <p className="text-center text-lg font-light mt-2">Valentine Orga</p>
-                <p className='text-center text-xs font-thin text-gray-200'>Blockchain Developer</p>
+                <p className='text-center text-xs font-thin text-gray-300'>Blockchain Developer</p>
 
                 <div className='mt-4 space-y-3 inline-block'>
                     <p className='flex items-center text-sm space-x-3 text-gray-400'>
