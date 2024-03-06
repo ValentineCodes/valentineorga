@@ -6,8 +6,6 @@ import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
 import { Popover, Transition } from '@headlessui/react'
 import Link from 'next/link';
 
-import { motion } from "framer-motion";
-
 type Props = {}
 
 export default function Header({ }: Props) {
