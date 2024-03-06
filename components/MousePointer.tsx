@@ -26,7 +26,7 @@ export default function MousePointer({ }: Props) {
                 <div className='rotate-90 mt-[-16px]'>-</div>
                 <div className='rotate-90 mt-[-16px]'>-</div>
                 <div className='rotate-90 mt-[-16px]'>-</div>
-                <div className='ml-[-3px] mt-[-10px] text-xs'>♦</div>
+                <div className='ml-[-3px] mt-[-10px] text-xs text-white'>♦</div>
             </div>
         </motion.div>
     )
