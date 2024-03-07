@@ -62,7 +62,7 @@ export default function About({ }: Props) {
                 viewport={{ once: true }}
             >
                 <img
-                    src="/images/man_codes.jpeg"
+                    src="/images/workspace.jpeg"
                     alt='Doing what I do'
                     className='w-72'
                 />
