@@ -1,5 +1,13 @@
 [
     {
+        "title": "Scaffold-ETH React Native",
+        "description": "An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain using React Native & Hardhat. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.",
+        "demoLink": "https://github.com/ValentineCodes/scaffold-eth-react-native",
+        "codeLink": "https://github.com/ValentineCodes/scaffold-eth-react-native",
+        "codeImg": "/images/scaffold-eth-react-native-img.png",
+        "demoImg": "/images/scaffold-eth-react-native.png"
+    },
+    {
         "title": "Paux Wallet",
         "description": "A crypto wallet to generate accounts, manage tokens, transfer funds, sign transactions and more on any EVM-compatible chain",
         "demoLink": "https://play.google.com/store/apps/details?id=com.paux.wallet",
