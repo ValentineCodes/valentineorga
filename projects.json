@@ -1,5 +1,13 @@
 [
     {
+        "title": "Yield - A Liquid Restaking Protocol",
+        "description": "A protocol which enables users to stake LIDO's stETH into EigenLayer to earn extra rewards. The system takes stETH deposits and mints the right amount of Yield Tokens(yETH) based on the user's deposit.",
+        "demoLink": "https://github.com/ValentineCodes/yield",
+        "codeLink": "https://github.com/ValentineCodes/yield",
+        "codeImg": "/images/yield_code.png",
+        "demoImg": "/images/yield_img.png"
+    },
+    {
         "title": "Scaffold-ETH React Native",
         "description": "An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain using React Native & Hardhat. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.",
         "demoLink": "https://github.com/ValentineCodes/scaffold-eth-react-native",
