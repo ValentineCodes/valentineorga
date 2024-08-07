@@ -33,7 +33,7 @@ export default function Skills({ }: Props) {
                 >
                     <CiMonitor className='text-3xl md:text-4xl' />
                     <p className='text-lg md:text-xl font-light'>Web Development</p>
-                    <p className='text-sm md:text-md font-light'>HTML, CSS, JS, NEXTJS</p>
+                    <p className='text-sm md:text-md font-light'>HTML, CSS, TS, NEXTJS</p>
                 </motion.div>
 
                 <motion.div
@@ -51,7 +51,7 @@ export default function Skills({ }: Props) {
                 >
                     <BsPhone className='text-3xl md:text-4xl' />
                     <p className='text-lg md:text-xl font-light'>Mobile Development</p>
-                    <p className='text-sm md:text-md font-light'>REACT NATIVE</p>
+                    <p className='text-sm md:text-md font-light'>REACT NATIVE & TYPESCRIPT</p>
                 </motion.div>
 
                 <motion.div
@@ -69,7 +69,7 @@ export default function Skills({ }: Props) {
                 >
                     <LuSquareStack className='text-3xl md:text-4xl' />
                     <p className='text-lg md:text-xl font-light'>Smart Contract Development</p>
-                    <p className='text-sm md:text-md font-light'>SOLIDITY</p>
+                    <p className='text-sm md:text-md font-light'>SOLIDITY & TYPESCRIPT</p>
                 </motion.div>
             </div>
 
