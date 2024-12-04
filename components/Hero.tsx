@@ -28,7 +28,7 @@ export default function Hero({ }: Props) {
                 transition={{ duration: 0.7, ease: "easeInOut" }}
                 className='border border-white rounded-ss-[100px] rounded-br-[100px] px-4 py-6 shadow-[-3px_-3px_10px_2px_#15f7d6] max-w-[300px]'
             >
-                <img src="/images/profile_image.jpeg" alt="My handsome face" className='relative rounded-full h-32 w-32 mx-auto object-cover border-4 border-[#15f7d6]' />
+                <img src="/images/profile_image.png" alt="MY UGLY FACE!" className='relative rounded-full h-32 w-32 mx-auto object-cover border-4 border-[#15f7d6] bg-white' />
                 <p className="text-center text-lg font-light mt-2">Valentine Orga</p>
                 <p className='text-center text-xs font-thin text-gray-300'>Blockchain Developer</p>
 

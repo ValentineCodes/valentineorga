@@ -26,7 +26,7 @@ export default function Header({ }: Props) {
                 <div className='hidden sm:flex space-x-6'>
                     <Link href="https://www.linkedin.com/in/valentineorga" target="_blank"><FaLinkedinIn className='text-gray-500 hover:text-[#15f7d6] duration-200 text-2xl' /></Link>
 
-                    <Link href="https://twitter.com/ValentineOrga" target="_blank"><FaTwitter className='text-gray-500 hover:text-[#15f7d6] duration-200 text-2xl' /></Link>
+                    <Link href="https://x.com/ValentineOrga" target="_blank"><FaTwitter className='text-gray-500 hover:text-[#15f7d6] duration-200 text-2xl' /></Link>
 
                     <Link href="https://github.com/ValentineCodes" target="_blank"><FaGithub className='text-gray-500 hover:text-[#15f7d6] duration-200 text-2xl' /></Link>
                 </div>
@@ -57,7 +57,7 @@ export default function Header({ }: Props) {
                     <div className='flex sm:hidden space-x-6 ml-4 mt-2'>
                         <Link href="https://www.linkedin.com/in/valentineorga" target="_blank"><FaLinkedinIn className='text-gray-500 hover:text-[#15f7d6] duration-200 text-2xl' /></Link>
 
-                        <Link href="https://twitter.com/ValentineOrga" target="_blank"><FaTwitter className='text-gray-500 hover:text-[#15f7d6] duration-200 text-2xl' /></Link>
+                        <Link href="https://x.com/ValentineOrga" target="_blank"><FaTwitter className='text-gray-500 hover:text-[#15f7d6] duration-200 text-2xl' /></Link>
 
                         <Link href="https://github.com/ValentineCodes" target="_blank"><FaGithub className='text-gray-500 hover:text-[#15f7d6] duration-200 text-2xl' /></Link>
                     </div>
