@@ -8,9 +8,9 @@
         "demoImg": "/images/yield_img.png"
     },
     {
-        "title": "Scaffold-ETH React Native",
+        "title": "ETH Mobile",
         "description": "An open-source, up-to-date toolkit for building decentralized applications (dapps) on the Ethereum blockchain using React Native & Hardhat. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.",
-        "demoLink": "https://github.com/ValentineCodes/scaffold-eth-react-native",
+        "demoLink": "https://ethmobile.io",
         "codeLink": "https://github.com/ValentineCodes/scaffold-eth-react-native",
         "codeImg": "/images/scaffold-eth-react-native-img.png",
         "demoImg": "/images/scaffold-eth-react-native.png"
