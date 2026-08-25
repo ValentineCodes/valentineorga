@@ -1,37 +1,29 @@
-"use client"
-
-import About from "@/components/About";
-import Contact from "@/components/Contact";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-
-import { Popover } from '@headlessui/react'
+import Work from "@/components/Work";
+import Capabilities from "@/components/Capabilities";
+import Experience from "@/components/Experience";
+import Currently from "@/components/Currently";
+import Writing from "@/components/Writing";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="text-white">
-      <Popover className="relative min-h-screen w-full bg-[#292f37]">
-        <Header />
+    <>
+      <Header />
+      <main id="main">
         <Hero />
-      </Popover>
-
-      <section id="about" className="bg-[url('/images/about_bg.jpeg')] min-h-screen bg-no-repeat bg-cover">
+        <Work />
+        <Capabilities />
+        <Experience />
+        <Currently />
+        <Writing />
         <About />
-      </section>
-
-      <section id="skills" className="bg-[url('/images/coding_bg.jpeg')] min-h-screen bg-no-repeat bg-cover">
-        <Skills />
-      </section>
-
-      <section id="Projects" className="bg-[url('/images/head_shattering.jpeg')] min-h-screen bg-cover">
-        <Projects />
-      </section>
-
-      <section id="contact" className="bg-[#1a1e23] min-h-screen bg-cover">
         <Contact />
-      </section>
-    </main>
+      </main>
+      <Footer />
+    </>
   );
 }

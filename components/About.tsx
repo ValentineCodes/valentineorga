@@ -1,72 +1,44 @@
-import React from 'react'
-import { motion } from "framer-motion";
+import Image from "next/image";
+import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
 
-type Props = {}
-
-export default function About({ }: Props) {
-    return (
-        <div className='bg-[#292f37] bg-opacity-90 min-h-screen flex flex-col lg:flex-row items-center space-y-14 lg:justify-between lg:space-x-14 px-6 lg:px-32 py-14'>
-            <div>
-                <motion.div
-                    initial={{
-                        x: -100,
-                        opacity: 0,
-                        scale: 0.8,
-                    }}
-                    whileInView={{
-                        x: 0,
-                        opacity: 1,
-                        scale: 1,
-                    }}
-                    transition={{ duration: 0.7, ease: "easeInOut" }}
-                    viewport={{ once: true }}
-                >
-                    <h1 className='border-2 border-[#15f7d6] rounded-ss-[30px] rounded-br-[30px] px-6 py-4 text-2xl lg:text-4xl inline'>About&nbsp;Me</h1>
-                </motion.div>
-
-                <motion.div
-                    initial={{
-                        x: -100,
-                        opacity: 0,
-                        scale: 0.8,
-                    }}
-                    whileInView={{
-                        x: 0,
-                        opacity: 1,
-                        scale: 1,
-                    }}
-                    transition={{ duration: 0.7, delay: 0.05, ease: "easeInOut" }}
-                    viewport={{ once: true }}
-                    className='space-y-2 border p-4 rounded-[30px] max-w-[600px] mt-10 lg:mt-20'
-                >
-                    <p className='text-[#15f7d6] font-thin text-sm'>{'<p>'}</p>
-                    <p className='ml-4 text-2xl lg:text-4xl text-[#15f7d6]'>Hello!</p>
-                    <p className='text-sm lg:text-md font-light text-gray-200 ml-4'>My name is Valentine Orga and I specialize in blockchain development utilizing <span className='text-[#15f7d6]'>NextJS</span>, <span className='text-[#15f7d6]'>React Native</span>, <span className='text-[#15f7d6]'>Solidity</span>, e.t.c.</p>
-                    <p className='text-sm lg:text-md font-light text-gray-200 ml-4'>I&apos;m highly disciplined and dedicated to writing clear, concise, robust code that works. I believe in the blockchain&apos;s potential so I strive to never stop learning and improving.</p>
-                    <p className='text-sm lg:text-md font-light text-gray-200 ml-4'>I love reading books and educative articles. Also, Chess and Football... <span className='text-[#15f7d6]'>Up&nbsp;Barcelona!</span></p>
-                    <p className='text-sm lg:text-md font-light text-gray-200 ml-4'>I&apos;m always open to new challenges. Enough to push me beyond my limits and broaden my vision of the ecosystem.</p>
-                    <p className='text-[#15f7d6] font-thin text-sm'>{'</p>'}</p>
-                </motion.div>
+export default function About() {
+  return (
+    <section id="about" className="border-b border-border bg-bg py-20 md:py-28">
+      <div className="container grid gap-12 md:grid-cols-[1.4fr_1fr] md:items-start">
+        <Reveal className="min-w-0">
+          <div>
+            <SectionHeading eyebrow="About" title="About me" />
+            <div className="max-w-prose space-y-4 text-base text-muted">
+              <p>
+                I specialize in blockchain development — smart contracts in Solidity, and the
+                Next.js and React Native applications that sit on top of them. I care about
+                writing clear, well-tested code that does what it says, especially when
+                it&apos;s holding someone else&apos;s funds.
+              </p>
+              <p>
+                Most of what I build ends up open source. I like the blockchain space precisely
+                because so much of it is verifiable in public, and I try to hold my own work to
+                that standard.
+              </p>
+              <p>
+                Outside of shipping code, I read, play chess, and follow football — Barcelona,
+                specifically.
+              </p>
             </div>
-
-            <motion.div
-                initial={{
-                    opacity: 0.5,
-                    scale: 0.8,
-                }}
-                whileInView={{
-                    opacity: 1,
-                    scale: 1,
-                }}
-                transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
-                viewport={{ once: true }}
-            >
-                <img
-                    src="/images/workspace.jpeg"
-                    alt='Doing what I do'
-                    className='w-72'
-                />
-            </motion.div>
-        </div>
-    )
+          </div>
+        </Reveal>
+        <Reveal delay={0.15} className="min-w-0 w-full md:max-w-sm">
+          <Image
+            src="/images/workspace.jpeg"
+            alt="Valentine's workspace"
+            width={480}
+            height={480}
+            sizes="(min-width: 768px) 384px, 100vw"
+            className="h-auto w-full rounded-lg border border-border object-cover transition-transform duration-500 hover:scale-[1.02]"
+          />
+        </Reveal>
+      </div>
+    </section>
+  );
 }
