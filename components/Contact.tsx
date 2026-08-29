@@ -17,7 +17,7 @@ type Input = {
   company?: string // honeypot — real users never fill this in
 }
 
-const SERVICE_ID = 'service_3lucjjt'
+const SERVICE_ID = 'service_e6dbnl7'
 const TEMPLATE_ID = 'template_27ys0r5'
 const PUBLIC_KEY = 'u7V42A2oJGcyMzB_f'
 
