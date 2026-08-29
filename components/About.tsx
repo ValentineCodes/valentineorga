@@ -36,7 +36,7 @@ export default function About() {
         </Reveal>
         <Reveal delay={0.15} className="min-w-0 w-full md:max-w-sm">
           <Image
-            src="/images/workspace.jpeg"
+            src="/images/workspace.jpg"
             alt="Valentine's workspace"
             width={480}
             height={480}

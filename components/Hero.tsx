@@ -81,7 +81,7 @@ export default function Hero() {
           </div>
 
           <p className="mt-4 text-center font-mono text-[11px] uppercase tracking-wide text-accent">
-            Open to blockchain &amp; smart contract engineering work
+            full-time / freelance
           </p>
 
           <Link
