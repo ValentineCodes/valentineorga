@@ -76,7 +76,7 @@ export default function Contact() {
           <SectionHeading
             eyebrow="Contact"
             title="Let's build something."
-            description="Open to smart contract engineering, blockchain engineering, Web3 product development, and consulting or freelance work."
+            description="Open to full-time or freelance work"
           />
         </Reveal>
 

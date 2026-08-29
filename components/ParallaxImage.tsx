@@ -9,8 +9,6 @@ import {
   useReducedMotion,
 } from 'framer-motion'
 
-const MotionImage = motion(Image)
-
 type Props = {
   src: string
   alt: string
@@ -42,15 +40,16 @@ export default function ParallaxImage({
 
   return (
     <div ref={ref} className="absolute inset-0 overflow-hidden">
-      <MotionImage
-        src={src}
-        alt={alt}
-        fill
-        sizes={sizes}
-        priority={priority}
-        style={{ y, scale: 1.15 }}
-        className={className}
-      />
+      <motion.div style={{ y, scale: 1.15 }} className="absolute inset-0">
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes={sizes}
+          priority={priority}
+          className={className}
+        />
+      </motion.div>
     </div>
   )
 }
