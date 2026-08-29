@@ -1,34 +1,36 @@
-import type { Metadata } from "next";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import ProjectCard from "@/components/ProjectCard";
-import Reveal from "@/components/Reveal";
-import { projects } from "@/lib/projects";
-import { site } from "@/lib/site";
+import type { Metadata } from 'next'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import ProjectCard from '@/components/ProjectCard'
+import Reveal from '@/components/Reveal'
+import { projects } from '@/lib/projects'
+import { site } from '@/lib/site'
 
 const description =
-  "Smart contracts, Web3 applications, mobile wallets, and developer tooling built by Valentine Orga.";
+  'Smart contracts, Web3 applications, mobile wallets, and developer tooling built by Valentine Orga.'
 
 export const metadata: Metadata = {
-  title: "Work",
+  title: 'Work',
   description,
-  alternates: { canonical: "/work" },
+  alternates: { canonical: '/work' },
   openGraph: {
-    title: "Work | Valentine Orga",
+    title: 'Work | Valentine Orga',
     description,
     url: `${site.url}/work`,
     images: [site.ogImage],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Work | Valentine Orga",
+    card: 'summary_large_image',
+    title: 'Work | Valentine Orga',
     description,
     images: [site.ogImage],
   },
-};
+}
 
 export default function WorkPage() {
-  const ordered = [...projects].sort((a, b) => Number(b.featured) - Number(a.featured));
+  const ordered = [...projects].sort(
+    (a, b) => Number(b.featured) - Number(a.featured),
+  )
 
   return (
     <>
@@ -44,8 +46,9 @@ export default function WorkPage() {
               Everything I&apos;ve shipped and open-sourced.
             </h1>
             <p className="mt-4 max-w-xl text-base text-muted">
-              Smart contracts, Web3 applications, mobile wallets, and the developer tooling that
-              sits underneath them. Featured work is marked and sorted first.
+              Smart contracts, Web3 applications, mobile wallets, and the
+              developer tooling that sits underneath them. Featured work is
+              marked and sorted first.
             </p>
           </div>
         </section>
@@ -64,5 +67,5 @@ export default function WorkPage() {
       </main>
       <Footer />
     </>
-  );
+  )
 }

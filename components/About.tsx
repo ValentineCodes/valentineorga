@@ -1,6 +1,6 @@
-import Image from "next/image";
-import SectionHeading from "./SectionHeading";
-import Reveal from "./Reveal";
+import Image from 'next/image'
+import SectionHeading from './SectionHeading'
+import Reveal from './Reveal'
 
 export default function About() {
   return (
@@ -10,20 +10,26 @@ export default function About() {
           <div>
             <SectionHeading eyebrow="About" title="About me" />
             <div className="max-w-prose space-y-4 text-base text-muted">
-              <p>
-                I specialize in blockchain development — smart contracts in Solidity, and the
-                Next.js and React Native applications that sit on top of them. I care about
-                writing clear, well-tested code that does what it says, especially when
-                it&apos;s holding someone else&apos;s funds.
+              <p className="text-sm lg:text-md font-light text-gray-200">
+                I specialize in blockchain development utilizing{' '}
+                <span className="text-[#15f7d6]">NextJS</span>,{' '}
+                <span className="text-[#15f7d6]">React Native</span>,{' '}
+                <span className="text-[#15f7d6]">Solidity</span>, e.t.c.
               </p>
-              <p>
-                Most of what I build ends up open source. I like the blockchain space precisely
-                because so much of it is verifiable in public, and I try to hold my own work to
-                that standard.
+              <p className="text-sm lg:text-md font-light text-gray-200">
+                I&apos;m highly disciplined and dedicated to writing clear,
+                concise, robust code that works. I believe in the
+                blockchain&apos;s potential so I strive to never stop learning
+                and improving.
               </p>
-              <p>
-                Outside of shipping code, I read, play chess, and follow football — Barcelona,
-                specifically.
+              <p className="text-sm lg:text-md font-light text-gray-200">
+                I love reading books and educative articles. Also, Chess and
+                Football...{' '}
+                <span className="text-[#15f7d6]">Up&nbsp;Barcelona!</span>
+              </p>
+              <p className="text-sm lg:text-md font-light text-gray-200">
+                I&apos;m always open to new challenges. Enough to push me beyond
+                my limits and broaden my vision of the ecosystem.
               </p>
             </div>
           </div>
@@ -40,5 +46,5 @@ export default function About() {
         </Reveal>
       </div>
     </section>
-  );
+  )
 }

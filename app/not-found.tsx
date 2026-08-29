@@ -1,6 +1,6 @@
-import Link from "next/link";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Link from 'next/link'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 
 export default function NotFound() {
   return (
@@ -19,7 +19,10 @@ export default function NotFound() {
             href="/"
             className="group mt-8 inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm text-text transition-all duration-200 hover:scale-[1.03] hover:border-accent hover:text-accent active:scale-95"
           >
-            <span aria-hidden className="inline-block transition-transform duration-200 group-hover:-translate-x-1">
+            <span
+              aria-hidden
+              className="inline-block transition-transform duration-200 group-hover:-translate-x-1"
+            >
               ←
             </span>
             Back home
@@ -28,5 +31,5 @@ export default function NotFound() {
       </main>
       <Footer />
     </>
-  );
+  )
 }

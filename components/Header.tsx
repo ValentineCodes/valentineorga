@@ -1,30 +1,33 @@
-"use client";
+'use client'
 
-import { useState } from "react";
-import Link from "next/link";
-import { Dialog } from "@headlessui/react";
-import { FaLinkedinIn, FaGithub, FaXTwitter } from "react-icons/fa6";
-import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import { navigation, site } from "@/lib/site";
+import { useState } from 'react'
+import Link from 'next/link'
+import { Dialog } from '@headlessui/react'
+import { FaLinkedinIn, FaGithub, FaXTwitter } from 'react-icons/fa6'
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+import { navigation, site } from '@/lib/site'
 
 const socials = [
-  { label: "LinkedIn", href: site.social.linkedin, Icon: FaLinkedinIn },
-  { label: "GitHub", href: site.social.github, Icon: FaGithub },
-  { label: "X (Twitter)", href: site.social.x, Icon: FaXTwitter },
-];
+  { label: 'LinkedIn', href: site.social.linkedin, Icon: FaLinkedinIn },
+  { label: 'GitHub', href: site.social.github, Icon: FaGithub },
+  { label: 'X (Twitter)', href: site.social.x, Icon: FaXTwitter },
+]
 
 export default function Header() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-bg/90 backdrop-blur">
       <div className="container flex h-20 items-center justify-between">
-        <Link href="/" className="font-display text-base font-bold tracking-tight text-text">
+        <Link
+          href="/"
+          className="font-display text-base font-bold tracking-tight text-text"
+        >
           <span className="text-accent">VC/</span> {site.brand}
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-8 lg:flex">
-          {navigation.map((item) => (
+          {navigation.map(item => (
             <Link
               key={item.href}
               href={item.href}
@@ -74,7 +77,11 @@ export default function Header() {
         </button>
       </div>
 
-      <Dialog open={open} onClose={() => setOpen(false)} className="relative z-[100] lg:hidden">
+      <Dialog
+        open={open}
+        onClose={() => setOpen(false)}
+        className="relative z-[100] lg:hidden"
+      >
         <div className="fixed inset-0 bg-bg" aria-hidden="true" />
         <Dialog.Panel className="fixed inset-0 flex flex-col bg-bg px-6 py-6">
           <div className="flex items-center justify-between">
@@ -92,14 +99,16 @@ export default function Header() {
           </div>
 
           <nav aria-label="Primary" className="mt-14 flex flex-col gap-2">
-            {navigation.map((item) => (
+            {navigation.map(item => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
                 className="group flex items-baseline gap-4 border-b border-border py-5 font-display text-2xl font-semibold text-text transition-all duration-200 hover:pl-2 hover:text-accent"
               >
-                <span className="font-mono text-sm text-accent">{item.index}</span>
+                <span className="font-mono text-sm text-accent">
+                  {item.index}
+                </span>
                 {item.label}
               </Link>
             ))}
@@ -132,5 +141,5 @@ export default function Header() {
         </Dialog.Panel>
       </Dialog>
     </header>
-  );
+  )
 }

@@ -1,11 +1,14 @@
-import Link from "next/link";
-import { achievements, education, experience } from "@/lib/experience";
-import SectionHeading from "./SectionHeading";
-import Reveal from "./Reveal";
+import Link from 'next/link'
+import { achievements, education, experience } from '@/lib/experience'
+import SectionHeading from './SectionHeading'
+import Reveal from './Reveal'
 
 export default function Experience() {
   return (
-    <section id="experience" className="border-b border-border bg-bg py-20 md:py-28">
+    <section
+      id="experience"
+      className="border-b border-border bg-bg py-20 md:py-28"
+    >
       <div className="container">
         <Reveal>
           <SectionHeading
@@ -17,11 +20,14 @@ export default function Experience() {
         <div className="grid gap-12 lg:grid-cols-[2fr_1fr]">
           <ol className="min-w-0 space-y-10">
             {experience.map((job, i) => (
-              <li key={job.company} className="min-w-0 border-l border-border pl-6">
+              <li
+                key={job.company}
+                className="min-w-0 border-l border-border pl-6"
+              >
                 <Reveal delay={i * 0.1}>
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
                     <h3 className="font-display text-lg font-semibold text-text">
-                      {job.role} —{" "}
+                      {job.role} —{' '}
                       {job.url ? (
                         <Link
                           href={job.url}
@@ -42,8 +48,11 @@ export default function Experience() {
                   <p className="mt-1 text-xs text-muted">{job.location}</p>
                   <p className="mt-3 text-sm text-muted">{job.summary}</p>
                   <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1">
-                    {job.technologies.map((t) => (
-                      <span key={t} className="font-mono text-[11px] text-muted">
+                    {job.technologies.map(t => (
+                      <span
+                        key={t}
+                        className="font-mono text-[11px] text-muted"
+                      >
                         {t}
                       </span>
                     ))}
@@ -59,7 +68,7 @@ export default function Experience() {
                 Recognition
               </h3>
               <ul className="mt-4 space-y-4">
-                {achievements.map((a) => (
+                {achievements.map(a => (
                   <li key={a.title}>
                     <p className="text-sm font-medium text-text">{a.title}</p>
                     <p className="text-xs text-muted">{a.context}</p>
@@ -73,7 +82,7 @@ export default function Experience() {
                 Education
               </h3>
               <ul className="mt-4 space-y-4">
-                {education.map((e) => (
+                {education.map(e => (
                   <li key={e.school}>
                     <p className="text-sm font-medium text-text">{e.program}</p>
                     <p className="text-xs text-muted">
@@ -87,5 +96,5 @@ export default function Experience() {
         </div>
       </div>
     </section>
-  );
+  )
 }

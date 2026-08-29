@@ -1,28 +1,34 @@
-import Image from "next/image";
-import Link from "next/link";
-import { BsDownload } from "react-icons/bs";
-import { GrLocation } from "react-icons/gr";
-import { site } from "@/lib/site";
-import Parallax from "./Parallax";
+import Image from 'next/image'
+import Link from 'next/link'
+import { BsDownload } from 'react-icons/bs'
+import { GrLocation } from 'react-icons/gr'
+import { site } from '@/lib/site'
+import Parallax from './Parallax'
 
 export default function Hero() {
   return (
     <div className="container flex flex-col-reverse gap-14 py-16 md:flex-row md:items-center md:justify-between md:py-24 lg:py-32">
       <div className="w-full min-w-0 max-w-xl">
-        <p aria-hidden className="animate-fade-up font-mono text-sm text-accent">
-          {"<h1>"}
+        <p
+          aria-hidden
+          className="animate-fade-up font-mono text-sm text-accent"
+        >
+          {'<h1>'}
         </p>
         <h1 className="ml-1 animate-fade-up text-balance font-display text-4xl font-bold leading-[1.08] text-text [animation-delay:80ms] sm:text-5xl md:text-6xl">
-          I build blockchain products that actually ship.
+          I solve problems with code
         </h1>
-        <p aria-hidden className="animate-fade-up font-mono text-sm text-accent [animation-delay:160ms]">
-          {"</h1>"}
+        <p
+          aria-hidden
+          className="animate-fade-up font-mono text-sm text-accent [animation-delay:160ms]"
+        >
+          {'</h1>'}
         </p>
 
         <p className="mt-6 max-w-lg animate-fade-up text-balance text-base text-muted [animation-delay:220ms] md:text-lg">
-          I&apos;m Valentine — a blockchain engineer working across Solidity, React Native, and
-          Next.js. I build smart contracts, Web3 applications, and the developer tooling around
-          them, and I ship most of it in the open.
+          I&apos;m Valentine — I help businesses grow by crafting out great user
+          experiences. If you&apos;re looking for a developer that loves to get
+          stuff done
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-4 animate-fade-up [animation-delay:300ms]">
@@ -65,7 +71,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-4 flex flex-wrap justify-center gap-2">
-            {["Solidity", "Next.js", "React Native"].map((tag) => (
+            {['Solidity', 'Next.js', 'React Native'].map(tag => (
               <span
                 key={tag}
                 className="rounded-full border border-border px-3 py-1 font-mono text-[11px] text-muted"
@@ -85,10 +91,13 @@ export default function Hero() {
             className="group mt-5 flex items-center justify-center gap-2 rounded-full border border-border py-2.5 text-sm text-text transition-all duration-200 hover:scale-[1.02] hover:border-accent hover:text-accent active:scale-95"
           >
             Download résumé
-            <BsDownload aria-hidden className="transition-transform duration-200 group-hover:translate-y-0.5" />
+            <BsDownload
+              aria-hidden
+              className="transition-transform duration-200 group-hover:translate-y-0.5"
+            />
           </Link>
         </div>
       </Parallax>
     </div>
-  );
+  )
 }

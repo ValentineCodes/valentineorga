@@ -1,21 +1,25 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { FaGithub, FaArrowUpRightFromSquare } from "react-icons/fa6";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import DomainTag from "@/components/DomainTag";
-import { getProjectBySlug, projects } from "@/lib/projects";
-import { site } from "@/lib/site";
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { notFound } from 'next/navigation'
+import { FaGithub, FaArrowUpRightFromSquare } from 'react-icons/fa6'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import DomainTag from '@/components/DomainTag'
+import { getProjectBySlug, projects } from '@/lib/projects'
+import { site } from '@/lib/site'
 
 export function generateStaticParams() {
-  return projects.map((p) => ({ slug: p.slug }));
+  return projects.map(p => ({ slug: p.slug }))
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const project = getProjectBySlug(params.slug);
-  if (!project) return {};
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string }
+}): Metadata {
+  const project = getProjectBySlug(params.slug)
+  if (!project) return {}
 
   return {
     title: project.name,
@@ -28,19 +32,20 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
       images: [site.ogImage],
     },
     twitter: {
-      card: "summary_large_image",
+      card: 'summary_large_image',
       title: project.name,
       description: project.description,
       images: [site.ogImage],
     },
-  };
+  }
 }
 
 export default function ProjectPage({ params }: { params: { slug: string } }) {
-  const project = getProjectBySlug(params.slug);
-  if (!project) notFound();
+  const project = getProjectBySlug(params.slug)
+  if (!project) notFound()
 
-  const hasSeparateLiveUrl = project.liveUrl && project.liveUrl !== project.github;
+  const hasSeparateLiveUrl =
+    project.liveUrl && project.liveUrl !== project.github
 
   return (
     <>
@@ -56,7 +61,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
             </p>
 
             <div className="flex flex-wrap gap-2">
-              {project.category.map((c) => (
+              {project.category.map(c => (
                 <DomainTag key={c} category={c} />
               ))}
             </div>
@@ -103,11 +108,13 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                 <h2 className="font-mono text-xs uppercase tracking-[0.14em] text-accent">
                   Overview
                 </h2>
-                <p className="mt-3 text-base text-muted">{project.description}</p>
+                <p className="mt-3 text-base text-muted">
+                  {project.description}
+                </p>
 
                 {project.highlights.length > 0 ? (
                   <ul className="mt-5 space-y-2">
-                    {project.highlights.map((h) => (
+                    {project.highlights.map(h => (
                       <li key={h} className="flex gap-2 text-sm text-muted">
                         <span aria-hidden className="text-accent">
                           —
@@ -131,7 +138,7 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                     Stack
                   </h2>
                   <div className="mt-2 flex flex-wrap gap-x-3 gap-y-1">
-                    {project.technologies.map((t) => (
+                    {project.technologies.map(t => (
                       <span key={t} className="font-mono text-xs text-muted">
                         {t}
                       </span>
@@ -143,15 +150,21 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
                     Status
                   </h2>
                   <p className="mt-2 text-sm capitalize text-text">
-                    {project.status.replace("-", " ")}
+                    {project.status.replace('-', ' ')}
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="mt-14 border-t border-border pt-8">
-              <Link href="/work" className="group inline-flex items-center gap-1.5 text-sm text-accent hover:underline">
-                <span aria-hidden className="inline-block transition-transform duration-200 group-hover:-translate-x-1">
+              <Link
+                href="/work"
+                className="group inline-flex items-center gap-1.5 text-sm text-accent hover:underline"
+              >
+                <span
+                  aria-hidden
+                  className="inline-block transition-transform duration-200 group-hover:-translate-x-1"
+                >
                   ←
                 </span>
                 Back to all work
@@ -162,5 +175,5 @@ export default function ProjectPage({ params }: { params: { slug: string } }) {
       </main>
       <Footer />
     </>
-  );
+  )
 }

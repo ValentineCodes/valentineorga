@@ -1,8 +1,8 @@
 type Props = {
-  eyebrow: string;
-  title: string;
-  description?: string;
-};
+  eyebrow: string
+  title: string
+  description?: string
+}
 
 export default function SectionHeading({ eyebrow, title, description }: Props) {
   return (
@@ -18,5 +18,5 @@ export default function SectionHeading({ eyebrow, title, description }: Props) {
         <p className="mt-4 text-base text-muted md:text-lg">{description}</p>
       ) : null}
     </div>
-  );
+  )
 }

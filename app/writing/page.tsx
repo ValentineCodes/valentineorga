@@ -1,27 +1,28 @@
-import type { Metadata } from "next";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { site } from "@/lib/site";
+import type { Metadata } from 'next'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import { site } from '@/lib/site'
 
-const description = "Notes on smart contract patterns, Web3 tooling, and shipping decisions.";
+const description =
+  'Notes on smart contract patterns, Web3 tooling, and shipping decisions.'
 
 export const metadata: Metadata = {
-  title: "Writing",
+  title: 'Writing',
   description,
-  alternates: { canonical: "/writing" },
+  alternates: { canonical: '/writing' },
   openGraph: {
-    title: "Writing | Valentine Orga",
+    title: 'Writing | Valentine Orga',
     description,
     url: `${site.url}/writing`,
     images: [site.ogImage],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Writing | Valentine Orga",
+    card: 'summary_large_image',
+    title: 'Writing | Valentine Orga',
     description,
     images: [site.ogImage],
   },
-};
+}
 
 export default function WritingPage() {
   return (
@@ -38,12 +39,12 @@ export default function WritingPage() {
               Engineering notes
             </h1>
             <p className="mt-4 max-w-xl text-base text-muted">
-              Notes on smart contract patterns, Web3 tooling, and the decisions behind what I
-              ship.
+              Notes on smart contract patterns, Web3 tooling, and the decisions
+              behind what I ship.
             </p>
 
             <div className="mt-14 max-w-2xl rounded-lg border border-dashed border-border p-8 text-sm text-muted">
-              Nothing published here yet. Check back soon, or follow{" "}
+              Nothing published here yet. Check back soon, or follow{' '}
               <a
                 href="https://x.com/ValentineOrga"
                 target="_blank"
@@ -51,7 +52,7 @@ export default function WritingPage() {
                 className="text-accent hover:underline"
               >
                 @ValentineOrga
-              </a>{" "}
+              </a>{' '}
               for updates in the meantime.
             </div>
           </div>
@@ -59,5 +60,5 @@ export default function WritingPage() {
       </main>
       <Footer />
     </>
-  );
+  )
 }

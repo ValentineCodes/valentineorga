@@ -1,22 +1,23 @@
-import Link from "next/link";
-import { FaGithub, FaArrowUpRightFromSquare } from "react-icons/fa6";
-import type { Project } from "@/lib/projects";
-import DomainTag from "./DomainTag";
-import ParallaxImage from "./ParallaxImage";
+import Link from 'next/link'
+import { FaGithub, FaArrowUpRightFromSquare } from 'react-icons/fa6'
+import type { Project } from '@/lib/projects'
+import DomainTag from './DomainTag'
+import ParallaxImage from './ParallaxImage'
 
 export default function FeaturedProjectCard({
   project,
   reverse = false,
 }: {
-  project: Project;
-  reverse?: boolean;
+  project: Project
+  reverse?: boolean
 }) {
-  const hasSeparateLiveUrl = project.liveUrl && project.liveUrl !== project.github;
+  const hasSeparateLiveUrl =
+    project.liveUrl && project.liveUrl !== project.github
 
   return (
     <article
       className={`grid items-center gap-10 border-b border-border py-14 first:pt-0 last:border-b-0 md:grid-cols-2 md:gap-16 ${
-        reverse ? "md:[&>*:first-child]:order-2" : ""
+        reverse ? 'md:[&>*:first-child]:order-2' : ''
       }`}
     >
       <Link
@@ -35,7 +36,7 @@ export default function FeaturedProjectCard({
 
       <div className="min-w-0">
         <div className="flex flex-wrap gap-2">
-          {project.category.map((c) => (
+          {project.category.map(c => (
             <DomainTag key={c} category={c} />
           ))}
         </div>
@@ -46,11 +47,13 @@ export default function FeaturedProjectCard({
           </Link>
         </h3>
 
-        <p className="mt-3 text-balance text-base text-muted">{project.description}</p>
+        <p className="mt-3 text-balance text-base text-muted">
+          {project.description}
+        </p>
 
         {project.highlights.length > 0 ? (
           <ul className="mt-4 space-y-1.5">
-            {project.highlights.map((h) => (
+            {project.highlights.map(h => (
               <li key={h} className="flex gap-2 text-sm text-muted">
                 <span aria-hidden className="text-accent">
                   —
@@ -66,7 +69,7 @@ export default function FeaturedProjectCard({
         </p>
 
         <div className="mt-3 flex flex-wrap gap-2">
-          {project.technologies.map((t) => (
+          {project.technologies.map(t => (
             <span key={t} className="font-mono text-xs text-muted">
               {t}
             </span>
@@ -97,12 +100,15 @@ export default function FeaturedProjectCard({
             className="group flex items-center gap-1.5 text-sm text-accent"
           >
             Case study
-            <span aria-hidden className="inline-block transition-transform duration-200 group-hover:translate-x-1">
+            <span
+              aria-hidden
+              className="inline-block transition-transform duration-200 group-hover:translate-x-1"
+            >
               →
             </span>
           </Link>
         </div>
       </div>
     </article>
-  );
+  )
 }

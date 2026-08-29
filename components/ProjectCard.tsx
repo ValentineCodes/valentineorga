@@ -1,14 +1,14 @@
-import Image from "next/image";
-import Link from "next/link";
-import type { Project } from "@/lib/projects";
-import DomainTag from "./DomainTag";
+import Image from 'next/image'
+import Link from 'next/link'
+import type { Project } from '@/lib/projects'
+import DomainTag from './DomainTag'
 
 export default function ProjectCard({
   project,
   priority = false,
 }: {
-  project: Project;
-  priority?: boolean;
+  project: Project
+  priority?: boolean
 }) {
   return (
     <Link
@@ -33,12 +33,16 @@ export default function ProjectCard({
       </div>
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div className="flex flex-wrap gap-2">
-          {project.category.slice(0, 2).map((c) => (
+          {project.category.slice(0, 2).map(c => (
             <DomainTag key={c} category={c} />
           ))}
         </div>
-        <h3 className="font-display text-lg font-semibold text-text">{project.name}</h3>
-        <p className="line-clamp-3 flex-1 text-sm text-muted">{project.description}</p>
+        <h3 className="font-display text-lg font-semibold text-text">
+          {project.name}
+        </h3>
+        <p className="line-clamp-3 flex-1 text-sm text-muted">
+          {project.description}
+        </p>
         {project.highlights[0] ? (
           <p className="flex gap-2 text-xs text-muted">
             <span aria-hidden className="text-accent">
@@ -49,5 +53,5 @@ export default function ProjectCard({
         ) : null}
       </div>
     </Link>
-  );
+  )
 }
