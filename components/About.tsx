@@ -10,24 +10,24 @@ export default function About() {
           <div>
             <SectionHeading eyebrow="About" title="About me" />
             <div className="max-w-prose space-y-4 text-base text-muted">
-              <p className="text-sm lg:text-md font-light text-gray-200">
+              <p className="text-sm font-light text-muted lg:text-base">
                 I specialize in blockchain development utilizing{' '}
-                <span className="text-[#15f7d6]">NextJS</span>,{' '}
-                <span className="text-[#15f7d6]">React Native</span>,{' '}
-                <span className="text-[#15f7d6]">Solidity</span>, e.t.c.
+                <span className="text-accent">NextJS</span>,{' '}
+                <span className="text-accent">React Native</span>,{' '}
+                <span className="text-accent">Solidity</span>, e.t.c.
               </p>
-              <p className="text-sm lg:text-md font-light text-gray-200">
+              <p className="text-sm font-light text-muted lg:text-base">
                 I&apos;m highly disciplined and dedicated to writing clear,
                 concise, robust code that works. I believe in the
                 blockchain&apos;s potential so I strive to never stop learning
                 and improving.
               </p>
-              <p className="text-sm lg:text-md font-light text-gray-200">
+              <p className="text-sm font-light text-muted lg:text-base">
                 I love reading books and educative articles. Also, Chess and
                 Football...{' '}
-                <span className="text-[#15f7d6]">Up&nbsp;Barcelona!</span>
+                <span className="text-accent">Up&nbsp;Barcelona!</span>
               </p>
-              <p className="text-sm lg:text-md font-light text-gray-200">
+              <p className="text-sm font-light text-muted lg:text-base">
                 I&apos;m always open to new challenges. Enough to push me beyond
                 my limits and broaden my vision of the ecosystem.
               </p>

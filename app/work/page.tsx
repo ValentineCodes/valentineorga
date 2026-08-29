@@ -10,18 +10,18 @@ const description =
   'Smart contracts, Web3 applications, mobile wallets, and developer tooling built by Valentine Orga.'
 
 export const metadata: Metadata = {
-  title: 'Work',
+  title: 'Projects',
   description,
   alternates: { canonical: '/work' },
   openGraph: {
-    title: 'Work | Valentine Orga',
+    title: 'Projects | Valentine Orga',
     description,
     url: `${site.url}/work`,
     images: [site.ogImage],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Work | Valentine Orga',
+    title: 'Projects | Valentine Orga',
     description,
     images: [site.ogImage],
   },
@@ -40,14 +40,14 @@ export default function WorkPage() {
           <div className="container animate-fade-up">
             <p className="mb-3 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.14em] text-accent">
               <span aria-hidden className="h-px w-3.5 bg-accent" />
-              01 / Work
+              01 / Projects
             </p>
             <h1 className="max-w-2xl text-balance font-display text-4xl font-bold text-text md:text-5xl">
               Everything I&apos;ve shipped and open-sourced.
             </h1>
             <p className="mt-4 max-w-xl text-base text-muted">
               Smart contracts, Web3 applications, mobile wallets, and the
-              developer tooling that sits underneath them. Featured work is
+              developer tooling that sits underneath them. Featured projects are
               marked and sorted first.
             </p>
           </div>

@@ -62,7 +62,7 @@ export default async function ProjectPage({
             <p className="mb-3 flex items-center gap-3 font-mono text-xs uppercase tracking-[0.14em] text-accent">
               <span aria-hidden className="h-px w-3.5 bg-accent" />
               <Link href="/work" className="hover:underline">
-                Work
+                Projects
               </Link>
             </p>
 
@@ -173,7 +173,7 @@ export default async function ProjectPage({
                 >
                   ←
                 </span>
-                Back to all work
+                Back to all projects
               </Link>
             </div>
           </div>
