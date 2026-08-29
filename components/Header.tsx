@@ -23,7 +23,7 @@ export default function Header() {
           href="/"
           className="font-display text-base font-bold tracking-tight text-text"
         >
-          <span className="text-accent">VC/</span> {site.brand}
+          <span className="text-accent">{site.brandMark}</span> {site.brand}
         </Link>
 
         <nav aria-label="Primary" className="hidden items-center gap-8 lg:flex">
@@ -86,7 +86,7 @@ export default function Header() {
         <Dialog.Panel className="fixed inset-0 flex flex-col bg-bg px-6 py-6">
           <div className="flex items-center justify-between">
             <Dialog.Title className="font-display text-base font-bold text-text">
-              <span className="text-accent">VC/</span> {site.brand}
+              <span className="text-accent">{site.brandMark}</span> {site.brand}
             </Dialog.Title>
             <button
               type="button"

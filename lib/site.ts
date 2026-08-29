@@ -1,6 +1,7 @@
 export const site = {
   name: 'Valentine Orga',
   brand: 'ValentineCodes',
+  brandMark: '<VC/>',
   role: 'Blockchain Engineer',
   tagline: 'I build blockchain products that actually ship.',
   description:

@@ -13,8 +13,7 @@ export default function Footer() {
     <footer className="border-t border-border bg-bg py-10">
       <div className="container flex flex-col items-center gap-6 sm:flex-row sm:justify-between">
         <p className="font-mono text-xs text-muted">
-          <span className="text-accent">VC/</span> {site.brand} — built with
-          Next.js
+          <span className="text-accent">{site.brandMark}</span> {site.brand}
         </p>
 
         <ul className="flex items-center gap-5">

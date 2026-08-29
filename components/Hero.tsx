@@ -16,7 +16,7 @@ export default function Hero() {
           {'<h1>'}
         </p>
         <h1 className="ml-1 animate-fade-up text-balance font-display text-4xl font-bold leading-[1.08] text-text [animation-delay:80ms] sm:text-5xl md:text-6xl">
-          I solve problems with code
+          Solving problems with code
         </h1>
         <p
           aria-hidden
@@ -26,9 +26,8 @@ export default function Hero() {
         </p>
 
         <p className="mt-6 max-w-lg animate-fade-up text-balance text-base text-muted [animation-delay:220ms] md:text-lg">
-          I&apos;m Valentine — I help businesses grow by crafting out great user
-          experiences. If you&apos;re looking for a developer that loves to get
-          stuff done
+          I help businesses grow by crafting out great user experiences. If
+          you&apos;re looking for a developer that loves to get stuff done
         </p>
 
         <div className="mt-8 flex flex-wrap items-center gap-4 animate-fade-up [animation-delay:300ms]">
@@ -49,7 +48,7 @@ export default function Hero() {
 
       <Parallax
         strength={18}
-        className="w-full min-w-0 max-w-[280px] flex-shrink-0 animate-fade-up [animation-delay:180ms] md:max-w-[300px]"
+        className="w-full min-w-0 max-w-[280px] flex-shrink-0 self-center animate-fade-up [animation-delay:180ms] md:max-w-[300px] md:self-auto"
       >
         <div className="rounded-2xl border border-border bg-surface p-6 transition-colors duration-300 hover:border-accent/40">
           <Image

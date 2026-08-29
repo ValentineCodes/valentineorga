@@ -28,11 +28,54 @@ export const categoryLabels: Record<ProjectCategory, string> = {
 
 export const projects: Project[] = [
   {
+    name: 'Treegens',
+    slug: 'treegens',
+    description:
+      'A tree verification and rewards platform where AI counts plants from planter submissions and decentralized verifiers approve them for MGRO token rewards.',
+    role: 'Lead Developer',
+    category: ['defi-refi', 'smart-contracts', 'web3-apps'],
+    technologies: ['Solidity', 'TypeScript', 'Next.js', 'React Native'],
+    image: '/images/treegens_img.png',
+    github: 'https://github.com/Treegens/treegens-app',
+    liveUrl: 'https://treegens.app',
+    featured: true,
+    status: 'shipped',
+    highlights: [
+      'Surpassed 100M plants recorded by planters as of August 2026',
+      'AI-driven plant verification with decentralized verifier rewards in MGRO',
+    ],
+  },
+  {
+    name: 'ETH Mobile',
+    slug: 'eth-mobile',
+    description:
+      'An open-source toolkit for building mobile decentralized applications with React Native, Foundry, and Hardhat — designed to make it easier for developers to create and deploy smart contracts and build interfaces that interact with them.',
+    role: 'Founder & Maintainer',
+    category: ['tooling', 'mobile'],
+    technologies: [
+      'React Native',
+      'Foundry',
+      'Hardhat',
+      'Ganache',
+      'Ethers.js',
+    ],
+    image: '/images/scaffold-eth-react-native.png',
+    github: 'https://github.com/ValentineCodes/scaffold-eth-react-native',
+    liveUrl: 'https://ethmobile.dev',
+    featured: true,
+    status: 'open-source',
+    highlights: [
+      'Gitcoin-funded open-source grantee',
+      'Adapted into Kitso, a LUKSO variant that placed top 10 in the Gitcoin × LUKSO grants program',
+      'Still live and maintained at ethmobile.dev',
+    ],
+  },
+  {
     name: 'Yield',
     slug: 'yield',
     description:
       "A liquid restaking protocol that lets users stake Lido's stETH into EigenLayer to earn additional rewards. Deposits mint yETH against the value staked, and a multisig-controlled admin role can delegate and undelegate to an operator and manage withdrawals.",
-    role: 'Creator',
+    role: 'Founder',
     category: ['smart-contracts', 'defi-refi'],
     technologies: ['Solidity', 'Next.js', 'Ethers.js', 'WalletConnect'],
     image: '/images/yield_img.png',
@@ -45,42 +88,16 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: 'ETH Mobile',
-    slug: 'eth-mobile',
-    description:
-      'An open-source toolkit for building mobile decentralized applications with React Native, Foundry, and Hardhat — designed to make it easier for developers to create and deploy smart contracts and build interfaces that interact with them.',
-    role: 'Creator & Maintainer',
-    category: ['tooling', 'mobile'],
-    technologies: [
-      'React Native',
-      'Foundry',
-      'Hardhat',
-      'Ganache',
-      'Ethers.js',
-    ],
-    image: '/images/scaffold-eth-react-native.png',
-    github: 'https://github.com/ValentineCodes/scaffold-eth-react-native',
-    liveUrl: 'https://ethmobile.io',
-    featured: true,
-    status: 'open-source',
-    highlights: [
-      'Gitcoin-funded open-source grantee',
-      'Adapted into Kitso, a LUKSO variant that placed top 10 in the Gitcoin × LUKSO grants program',
-      'Still live and maintained at ethmobile.io',
-    ],
-  },
-  {
     name: 'Paux Wallet',
     slug: 'paux-wallet',
     description:
       'A crypto wallet to generate accounts, manage tokens, transfer funds, sign transactions, and interact with dApps on any EVM-compatible chain.',
-    role: 'Creator',
+    role: 'Founder',
     category: ['mobile', 'web3-apps'],
     technologies: ['React Native', 'WalletConnect'],
     image: '/images/paux_img.jpg',
     github: 'https://github.com/ValentineCodes/paux',
-    liveUrl: 'https://play.google.com/store/apps/details?id=com.paux.wallet',
-    featured: true,
+    featured: false,
     status: 'shipped',
     highlights: [
       'Published on the Google Play Store',
@@ -92,7 +109,7 @@ export const projects: Project[] = [
     slug: 'token-wrapper',
     description:
       'A decentralized application which enables users to wrap native and ERC-20 tokens on supported networks.',
-    role: 'Creator',
+    role: 'Founder',
     category: ['web3-apps', 'smart-contracts'],
     technologies: ['Solidity', 'Next.js'],
     image: '/images/token-wrapper_img.png',
@@ -106,7 +123,7 @@ export const projects: Project[] = [
     name: 'The Bridge',
     slug: 'the-bridge',
     description: 'A bridge between layer-1 and layer-2 tokens.',
-    role: 'Creator',
+    role: 'Founder',
     category: ['web3-apps', 'smart-contracts'],
     technologies: ['Solidity', 'Next.js'],
     image: '/images/thebridge_img.png',
@@ -121,7 +138,7 @@ export const projects: Project[] = [
     slug: 'snowman-nft',
     description:
       'A composable NFT based on the ERC-4883 standard. Mint a snowman with dynamic attributes — sky color, wind direction, eye focus — and compose it with accessories like a hat or scarf.',
-    role: 'Creator',
+    role: 'Founder',
     category: ['smart-contracts'],
     technologies: ['Solidity', 'TypeScript'],
     image: '/images/snowman_img.png',
@@ -136,7 +153,7 @@ export const projects: Project[] = [
     slug: 'yeet-cli',
     description:
       'A CLI for querying blockchain data, interacting with smart contracts, transferring funds, generating accounts, and more.',
-    role: 'Creator',
+    role: 'Founder',
     category: ['tooling'],
     technologies: ['TypeScript', 'Node.js'],
     image: '/images/yeet_img.png',
@@ -151,7 +168,7 @@ export const projects: Project[] = [
     slug: 'unit-marketplace',
     description:
       'A decentralized NFT marketplace. Sellers can list NFTs for a fixed price or put them up for auction, and toggle between the two at any time.',
-    role: 'Creator',
+    role: 'Founder',
     category: ['web3-apps', 'smart-contracts'],
     technologies: ['Solidity', 'Next.js'],
     image: '/images/unit_img.png',

@@ -27,7 +27,7 @@ export default function Image() {
           color: '#2FBDAE',
         }}
       >
-        <span style={{ marginRight: 12 }}>VC/</span>
+        <span style={{ marginRight: 12 }}>{site.brandMark}</span>
         <span style={{ color: '#9AA6AA' }}>{site.brand}</span>
       </div>
       <div
